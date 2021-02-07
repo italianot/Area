@@ -2,10 +2,8 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.canvas.Canvas?>
-<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Slider?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
@@ -14,31 +12,14 @@
       <Canvas fx:id="mainCanvas" height="392.0" onMouseDragged="#onMouseDragged" onMousePressed="#onMousePressed" width="392.0" />
       <VBox alignment="TOP_CENTER" prefHeight="402.0" prefWidth="393.0" spacing="5.0">
          <children>
-            <Label contentDisplay="RIGHT" text="Введите данные (см)" />
-            <HBox prefHeight="35.0" prefWidth="338.0" spacing="10.0">
-               <children>
-                  <Label text="Верхнее основание" />
-                  <TextField fx:id="upperBase" />
-               </children>
-            </HBox>
-            <HBox prefHeight="35.0" prefWidth="338.0" spacing="10.0">
-               <children>
-                  <Label text="Нижнее основание" />
-                  <TextField fx:id="lowerBase" />
-               </children>
-            </HBox>
-            <HBox prefHeight="35.0" prefWidth="338.0" spacing="10.0">
-               <children>
-                  <Label prefHeight="18.0" prefWidth="106.4" text="Высота" />
-                  <TextField fx:id="height" />
-               </children>
-            </HBox>
-            <Button fx:id="button" mnemonicParsing="false" text="Считать" />
+            <Label text="Масштаб" />
             <Slider fx:id="sldZoom" max="200.0" min="10.0" showTickLabels="true" showTickMarks="true" value="100.0" />
+            <Label text="Верхнее основание" />
             <Slider fx:id="sldUp" majorTickUnit="1.0" max="4.0" min="1.0" minorTickCount="1" showTickLabels="true" showTickMarks="true" value="2.0" />
-            <Slider fx:id="sldLow" majorTickUnit="1.0" max="5.0" min="2.0" minorTickCount="1" showTickLabels="true" showTickMarks="true" value="4.0" />
+            <Label text="Нижнее основание" />
+            <Slider fx:id="sldLow" majorTickUnit="1.0" max="9.0" min="2.0" minorTickCount="1" showTickLabels="true" showTickMarks="true" value="4.0" />
+            <Label text="Высота" />
             <Slider fx:id="sldH" majorTickUnit="1.0" max="5.0" min="1.0" minorTickCount="1" showTickLabels="true" showTickMarks="true" value="3.0" />
-            <Slider fx:id="sldR" majorTickUnit="1.0" max="5.0" min="1.0" minorTickCount="1" showTickLabels="true" showTickMarks="true" value="3.0" />
             <Label fx:id="messageLabel">
                <padding>
                   <Insets top="10.0" />
