@@ -160,6 +160,7 @@ public class Controller implements Initializable{
             }
             else {
                 messageLabel.setText("Верхнее основание должно быть меньше нижнего!");
+                finalLabel.setText( "Площадь не может быть посчитана");
             }
         }
 
