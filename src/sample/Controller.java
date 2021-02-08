@@ -13,6 +13,7 @@ import javafx.scene.control.Slider;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.ArcType;
+import javafx.scene.shape.StrokeLineJoin;
 import javafx.scene.transform.Affine;
 import javafx.stage.Stage;
 
@@ -98,6 +99,7 @@ public class Controller implements Initializable{
 
             //толщина линии
             ctx.setLineWidth(2. / zoom);
+            ctx.setLineJoin(StrokeLineJoin.BEVEL);
             //треугольник
             ctx.strokePolygon(
                     new double[]{-up / 2, -up / 2, -low / 2},
@@ -121,14 +123,14 @@ public class Controller implements Initializable{
             //окружность
             ctx.strokeOval(//криво работает
                     (-up / 2) - d,
-                    (-h / 2) + d,
+                    (-h / 2),
                     2 * r,
                     2 * r
             );
             ctx.setFill(Color.WHITE);
             ctx.fillOval(//криво работает
                     (-up / 2) - d,
-                    (-h / 2) + d,
+                    (-h / 2),
                     2 * r,
                     2 * r
             );
