@@ -114,21 +114,21 @@ public class Controller implements Initializable{
             );
 
             //окружность
-            ctx.strokeOval(//криво работает
+            ctx.strokeOval(
                     (-up / 2) - d,
                     (-h / 2),
                     2 * r,
                     2 * r
             );
             ctx.setFill(Color.WHITE);
-            ctx.fillOval(//криво работает
+            ctx.fillOval(
                     (-up / 2) - d,
                     (-h / 2),
                     2 * r,
                     2 * r
             );
-
-            ctx.restore();// восст. состояние матрицы
+            // восст. состояние матрицы
+            ctx.restore();
         }
 
         void count(){
@@ -151,7 +151,7 @@ public class Controller implements Initializable{
                 double s = ((c * h) / 2) - (Math.PI * Math.pow((p - a),2)) ;// площадь треугольника минус площадь окружности
 
                 messageLabel.setText("Площадь посчитана. Фигура нарисована.");
-                finalLabel.setText( "Площадь равна: " + s);
+                finalLabel.setText( "Площадь равна: "+ s + " см");
             }
             else {
                 messageLabel.setText("Верхнее основание должно быть меньше нижнего!");

@@ -14,11 +14,11 @@
          <children>
             <Label text="Масштаб" />
             <Slider fx:id="sldZoom" max="200.0" min="10.0" showTickLabels="true" showTickMarks="true" value="100.0" />
-            <Label text="Верхнее основание" />
+            <Label text="Верхнее основание, см" />
             <Slider fx:id="sldUp" majorTickUnit="1.0" max="15.0" min="1.0" minorTickCount="1" showTickLabels="true" showTickMarks="true" value="2.0" />
-            <Label text="Нижнее основание" />
+            <Label text="Нижнее основание, см" />
             <Slider fx:id="sldLow" majorTickUnit="1.0" max="20.0" min="2.0" minorTickCount="1" showTickLabels="true" showTickMarks="true" value="4.0" />
-            <Label text="Высота" />
+            <Label text="Высота, см" />
             <Slider fx:id="sldH" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="1" showTickLabels="true" showTickMarks="true" value="3.0" />
             <Label fx:id="messageLabel">
                <padding>
